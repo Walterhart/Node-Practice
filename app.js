@@ -3,11 +3,14 @@
 // Modules - Encapsulated Code (only share minimum)
 // All node files are Modules
 
-// fetch modules
+// fetch modules and store into variable
  const names = require('./4-names');
  const sayHi = require('./5-util.js')
- console.log(names)
+ const data = require('./6-alternative-flavor')
+ //console.log(data)
  
-sayHi('walter')
-sayHi(names.peter)
-sayHi(names.john)
+ // When module is called it will be invoked
+ // require('./7-mind-grendade')
+ sayHi('walter')
+ sayHi(names.peter)
+ sayHi(names.john)
