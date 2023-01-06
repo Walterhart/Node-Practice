@@ -1,9 +1,13 @@
+// Modules
+// CommonJS, every file is  module (by default)
+// Modules - Encapsulated Code (only share minimum)
+// All node files are Modules
 
-// Display current directory and file
-console.log(__dirname)
-console.log(__filename)
-
-// Print hello world per sec
-setInterval(() =>{
-    console.log('hello world')
-}, 1000)
+// fetch modules
+ const names = require('./4-names');
+ const sayHi = require('./5-util.js')
+ console.log(names)
+ 
+sayHi('walter')
+sayHi(names.peter)
+sayHi(names.john)
