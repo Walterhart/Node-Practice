@@ -1,0 +1,25 @@
+{
+  "name": "node-practice",
+  "version": "1.0.0",
+  "description": "Default ",
+  "main": "1-simple-output.js",
+  "scripts": {
+    "start": "nodemon 14-package-json.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Walterhart/Node-Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Walterhart/Node-Practice/issues"
+  },
+  "homepage": "https://github.com/Walterhart/Node-Practice#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
