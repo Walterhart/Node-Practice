@@ -4,7 +4,7 @@
   "description": "Default ",
   "main": "1-simple-output.js",
   "scripts": {
-    "start": "nodemon 14-package-json.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",

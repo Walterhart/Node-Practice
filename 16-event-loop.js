@@ -24,7 +24,7 @@ readFile('./content/first.txt','utf8', (err, result) =>{
 })
 console.log('starting next task')*/
 
-/* example :
+/* example 2:
 // start operation 
 console.log('first')
 setTimeout(() => {
@@ -43,7 +43,10 @@ console.log('I will run first')
 // procces is not exited and will continue to run
 */
 
-/* example 4:*/
+/* example 4:*
+    Proccess will stay alive 
+    Event loop waiting for request
+*/
 const http = require('http')
 const server = http.createServer((req,res) => {
     console.log('request event')
