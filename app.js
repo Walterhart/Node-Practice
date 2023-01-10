@@ -1,10 +1,15 @@
 // better setup than 12-fileread
-// util allow promise functions
+// add promises to end of module to return them
 
+
+const {readFile, writeFile} = require('fs').promises
+
+// util allow promise functions
+/* Another version as above
 const {readFile, writeFile} = require('fs');
 const util = require('util');
 const readFilePromise = util.promisify(readFile)
-const writeFilePromise = util.promisify(writeFile)
+const writeFilePromise = util.promisify(writeFile)*/
 
 
 // make a start function as async function
@@ -12,9 +17,9 @@ const writeFilePromise = util.promisify(writeFile)
 // wrap in a  try, catch block
 const start = async() =>{
     try{
-        const first = await readFilePromise('./content/first.txt', 'utf-8')
-        const second = await readFilePromise('./content/second.txt','utf-8')
-        await writeFilePromise('./content/result-mind-grenade.txt', `This is first and second: ${first} ${second}`)
+        const first = await readFile('./content/first.txt', 'utf-8')
+        const second = await readFile('./content/second.txt','utf-8')
+        await writeFile('./content/result-mind-grenade.txt', `This is first and second: ${first} ${second}`)
         console.log(first, second )
         
     }catch(error){
