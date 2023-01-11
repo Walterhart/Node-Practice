@@ -5,7 +5,7 @@ const EventEmitter = require('events');
 
 const customEmitter = new EventEmitter()
 
-// on(EventName): listen to event
+// on(EventName, (parameters)): listen to event
 
 customEmitter.on('response', (name,id) => {
     console.log(`data recieved ${name} with id: ${id}`)
